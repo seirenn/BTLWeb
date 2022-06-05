@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: url("vitj.jpg");
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 >Application Form</h1>
+    <label for="name">Name</label>
+    <input type="text"> <br> <br>
+
+    <label for="aoi">Area of Internet</label> <br>
+    <input type="radio" name="aoi">Web Designer
+    <input type="radio" name="aoi">Web Administrator 
+    <input type="radio" name="aoi">Web Developer <br> <br>
+
+    <label for="ex">Experience</label>
+    <select name="ex" id="ex">
+        <option value="no">None</option>
+        <option value="fresher">Fresher</option>
+        <option value="internship">Intership</option>
+        <option value="junior">Junior</option>
+        <option value="senior">Senior</option>
+    </select> <br> <br>
+
+    <label for="cmt">Comments</label>
+    <textarea name="Comments" id="cmt" cols="50" rows="4">
+        Type your comments here.
+    </textarea> <br>
+
+    <input type="checkbox"> Sent acknowledgement <br><br>
+
+    <button type="button">
+        OK
+    </button>
+    <button type="button">RESET</button>
+    
+
+</body>
+</html>

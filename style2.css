@@ -1,0 +1,189 @@
+/* .container {
+	width: 100%
+	height: auto;
+}
+.menu{
+	width: 100%
+	height: 120px;
+	background-color: rgb(255, 186, 0);
+} */
+.up{
+	width: 80%;
+	height: 70px;
+	margin: 0px auto;
+}
+.up ul{
+	list-style: none;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.up ul li {
+	display: inline-block;
+	padding: 10px;
+}
+.up ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.up ul li a img{
+	vertical-align: middle;
+}
+.logo a {
+	padding-right: 40px;
+}
+.down{
+	height: 50px;
+	width: 80%;
+	margin: 0 auto;
+}
+.search{
+	height: 40px;
+	width: 550px;
+	background-color: white;
+	margin-left: 60px;
+	border-radius: 5px;
+}
+.search input{
+	width: 480px;
+	height: 35px;
+	border: 0px;
+	padding-left: 20px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+.search button{
+	border: 0px;
+}
+.search button img{
+	width: 20px;
+	height: auto;
+	vertical-align: middle;
+}
+
+/*.nvabar{
+	width: 100%
+	height:auto;
+
+}
+.nvabar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.nvabar ul li{
+	display: inline;
+	padding-right: 10px;
+}
+ .nvabar ul li a{
+	text-decoration: none;
+	padding: 14px 16px;
+	color: black;
+
+	border: 1px solid black;
+  	padding-top: 20px;
+  	padding-right: 40px;
+  	padding-bottom: 20px;
+  	padding-left: 40px;
+}
+.nvabar ul li a:hover{
+	background-color: #F29F05;
+}*/
+
+.headline{
+	text-align: center;
+	margin: 40px 0px;
+}
+h3{
+	font-size: 18px;
+	color: #111;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	/*border: 1px solid #bebebe;*/
+	display: inline-block;
+	color: #555;
+}
+
+
+
+ul.products{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+}
+ul.products li{
+	/*để trên mỗi hàng có 4 sản phẩm thì flex: 25%;*/
+	flex-basis: 25%;
+	padding-left: 15px;
+	box-sizing: border-box;
+	padding-right: 15px;
+	margin-bottom: 30px;
+}
+ul.products li img{
+	width: 100%;
+	height: 370px; 
+}
+ul.products li .product-top{
+	position: relative;
+	overflow: hidden;
+}
+ul.products li .product-top .product-thumb{
+	display: block;
+}
+/*tạo hiệu ứng cho ảnh khi trỏ chuột vào*/
+ul.products li:hover .product-top .product-thumb img{
+	filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+	display: block;
+}
+ul.products li .product-top a.buy-now{
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	background-color: #446084;
+	color: #fff;
+	padding: 10px 0px;
+	position: absolute;
+	bottom: -36px;
+	width: 100%;
+	/*hiệu ứng cho nút mua ngay nổi lên chậm*/
+	transition: 0.25s ease-in-out;
+	opacity: 0.85;
+}
+/*khi trỏ con chuột vào li thì cái buy now sẽ xuất hiện*/
+ul.products li:hover a.buy-now{
+	bottom: 0px;
+}
+
+ul.products li .product-info{
+	padding: 10px 0px;
+}
+ul.products li .product-info a{
+	display: block;
+	text-decoration: none;
+}
+
+/*cat: categori :D*/
+ul.products li .product-info a.product-cat{
+	font-size: 11px;
+	color: #9e9e9e;
+	text-transform: uppercase;
+	padding: 3px 0px;
+}
+ul.products li .product-info a.product-name{
+	color: #334862;
+	padding: 3px 0px;
+}
+ul.products li .product-info .product-price{
+	color: black;
+	padding: 2px 0px;
+	font-weight: 600;
+}

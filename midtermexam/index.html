@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trường Đại học Kinh tế Đà Nẵng</title>
+
+    <!-- float: left; -->
+    <!-- .nav
+        display: flex;
+            justify-content: center;
+            align-items: center; -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        
+        .wrap {
+            width: 80%;
+            margin: auto;
+        }
+        
+        .header {
+            width: 100%;
+            height: 140px;
+            margin-bottom: 10px;
+            align-items: center;
+            line-height: 140px;
+        }
+        
+        .nav {
+            width: 100%;
+            height: 30px;
+            margin: 7px, 0px;
+            margin-bottom: 30px;
+            background-color: rgb(1, 95, 169);
+        }
+        
+        .nav>ul {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .nav>ul li {
+            float: left;
+            line-height: 30px;
+        }
+        
+        .nav>ul li a {
+            color: whitesmoke;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0px 30px;
+        }
+        
+        .nav>ul li a:hover {
+            background-color: rgb(107, 75, 107);
+        }
+        
+        .main {
+            display: flex;
+        }
+        
+        .main::after {
+            content: ".";
+            display: block;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            clear: both;
+        }
+        
+        .main .sidebar {
+            flex: 3;
+            height: 450px;
+        }
+        
+        .main .content {
+            flex: 7;
+            height: 450px;
+        }
+        
+        .main .content>.newsletter {
+            border-bottom: 1px solid;
+        }
+        
+        .main .content>.newsletter img {
+            float: left;
+            height: auto;
+            max-width: 160px;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(1, 95, 169);
+            color: whitesmoke;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <img class="img" src="logo.png" alt="Logo DUE" height="140px">
+            <img src="logo_UDN.png" alt="Logo UDN" width=140px align="right">
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#"><img src="main.png" alt="Trang chu" height="24px" align="center"></a>
+                </li>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">ĐÀO TẠO</a></li>
+                <li><a href="#">NGHIÊN CỨU</a></li>
+                <li><a href="#">HỢP TÁC</a></li>
+                <li><a href="#">DỊCH VỤ</a></li>
+                <li><a href="#">HỖ TRỢ</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div></div>
+            <div class="content">
+                <h2>Tin tức & Sự Kiện</h2>
+                <div class="newsletter">
+                    <p>
+                        <h4>Đại học Đà Nẵng phát hành bản tin định kỳ-Newsletter No.3 UD-2020</h4>
+                    </p>
+                    <img src="tintuc01.png" alt="Newsletter">
+
+                    <p>
+                        Nhằm tiếp tục gắn kết phục vụ cộng đồng: tăng cường hiệu quả thông tin truyền thông về giáo dục đào tọa, góp phần nâng cao uy tín, học hiệu, Đại học Đà Nẵng trân trọng giới thiệu Bản tin định kỳ số 3-Newsletter No.3 UD-2020.
+
+                    </p>
+
+                </div>
+                <br><br>
+                <!-- <div class="graduate">
+                    <p>
+                        <h4>Mùa tốt nghiệp đặc biệt</h4>
+                    </p>
+                    <img src="tintuc02.jpg" alt="Totnghiep">
+                    <p>
+                        Không phải tiếng ve râm ran đầu hè, cũng không phải cái nắng chói chang hòa lẫn sắc đỏ của hoa phượng dưới sân trường Đại học Kinh tế, năm nay,các bạn sinh viên khóa 42 có một lễ tốt nghiệp thật đặc biệt!
+                    </p>
+                </div> -->
+            </div>
+
+            <div class="sidebar">content</div>
+        </div>
+        <!-- main -->
+
+        <div class="footer">
+            @Bản quyền thuộc Trường Đại học Kinh tế Đà Nẵng
+        </div>
+    </div>
+    <!-- wrap -->
+</body>
+
+</html>

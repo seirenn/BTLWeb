@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- 
+    1. h1 - h6 : heading
+    2. p: paragraph
+    3. img: source="" ; alt - anh bi loi hoac mat mang thi se dung den
+    4. a: anchor: dat lien ket
+    5. ul, li: unordered list, list item: hien thi danh sach
+    6. table: ke bang
+    7. input
+    8. button
+    9. div: tạo khối bao quanh
+ -->
+<html>
+  <!-- phần đầu -->
+  <head>
+    <title>Belong You</title>
+    <meta charset="utf-8" />
+    <!--hỗ trợ viết tiếng việt-->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style> - Internal
+      h1 {
+        color:saddlebrown;
+        font-size: 50px;
+
+      }
+    </style> -->
+
+  </head>
+  <!-- phần thân -->
+  <body>
+    <h1>Welcome to my blog !</h1>
+    <h1 id="random">Welcome to my blog !</h1>
+    <h1 class="secondhand">Welcome to my blog !</h1>
+    <h2 style="color: rosybrown; font: size 20px;">Belong You</h2> <!--Inline-->
+
+    <div>Tên đăng nhập <input type="text" /></div>
+    <div>Mật khẩu <input type="password" /></div>
+    <div>
+      <button>Đăng nhập</button>
+
+      <input type="submit" value="Đăng ký" />
+    </div>
+
+    <!-- <input type="text">nhap van ban -->
+
+     <input name="gender" type="radio" /> Nam
+    <input
+      name="gender"
+      type="radio"
+    />Nữ
+    <input name="gender" type="radio" /> Khác
+
+    <!-- <input type="radio" > dau tich tron -->
+
+    <!-- <input type="checkbox">  dau tich vuong -->
+
+    <p>Hi, my name is Trang and I'm a freshman in Vietnam Korean University</p>
+
+    <div>
+      <img
+        width="250"
+        src="https://i.pinimg.com/564x/e2/f1/c4/e2f1c4b6af1f540f46a8c82a4fbee177.jpg"
+        alt="me, rn"
+      />
+    </div>
+    <div>
+      <a href="https://www.instagram.com/stranger_710/">My Instagram </a>
+    </div>
+
+    <ul>
+      <li>About me</li>
+      <li>My major</li>
+      <li>My school</li>
+      <li>My life</li>
+    </ul>
+
+    <!-- 
+      <ol>
+      <li>About me</li>
+      <li>My major</li>
+      <li>My school</li>
+      <li>My life</li>
+    </ol> - dấu chấm thành số
+     -->
+
+    <table>
+      <thead>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Go to school</td>
+          <td>Go to school</td>
+          <td>Go to school</td>
+          <td>Go to school</td>
+          <td>Go to school</td>
+          <td>Go to school</td>
+          <td>Netflix and chill</td>
+        </tr>
+        <!--tableround-->
+        <tr>
+          <td>Play basketball</td>
+          <td>Play basketball</td>
+          <td>Play basketball</td>
+          <td>Play basketball</td>
+          <td>Play basketball</td>
+          <td>Play basketball</td>
+          <td>HIH Club</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

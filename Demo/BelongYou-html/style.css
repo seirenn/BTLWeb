@@ -1,0 +1,19 @@
+/* External */
+h1 {
+    color:saddlebrown;
+    font-size: 50px;
+    font-style: oblique;
+  }
+#random{
+  color: salmon;
+}/*id*/
+
+.secondhand{
+  color:tan;
+}/* class */
+
+thead{
+  color: teal;
+  font-size: 15px;
+  font-style: italic;
+}
